@@ -1,0 +1,19 @@
+.container {
+    margin: auto;
+}
+  
+body {
+    margin: auto;
+    background-color: gray;
+    align-content: center;
+
+}
+
+pass {
+    margin: auto;
+}
+
+h1 {
+    margin: auto;
+    font: #ffffff;
+}

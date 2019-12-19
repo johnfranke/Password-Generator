@@ -105,14 +105,16 @@ var length = prompt("How many characters do you want your password to be?");
 	alert("Password is: " + password);
 
 
+	var body = document.body
+    var pass = document.createElement('pass');
+	pass.textContent = password;
+
+	body.appendChild(pass);
+
+
 
 
 	} else {
 		alert('You must enter a length between 8 and 128');
 		location.reload();
 	}
-
-
-
-
-
