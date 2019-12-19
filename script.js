@@ -60,6 +60,7 @@ var upperCharArray = [
   "Z"
 ];
 
+ 
 var length = prompt("How many characters do you want your password to be?");
 	if (length > 7 && length < 129) {
 	console.log(length);
@@ -101,12 +102,17 @@ var length = prompt("How many characters do you want your password to be?");
 	password = password.join("").slice(0,length)
 	console.log("Password is " + password);
 	console.log("password length is " + password.length);
+
+	if (password.length === 0) {
+		alert('You must choose at least one character type.');
+		location.reload();
+	}
 	
 	
 	document.getElementById("thepassword").value = password;
 
 	function myFunction() {
-		var copyText = document.getElementById("thepassword");
+			var copyText = document.getElementById("thepassword");
 		copyText.select();
 		copyText.setSelectionRange(0, 99999)
 		document.execCommand("copy");
@@ -119,3 +125,7 @@ var length = prompt("How many characters do you want your password to be?");
 		alert('You must enter a length between 8 and 128');
 		location.reload();
 	}
+
+	function refreshPage() {
+        window.location.reload();
+    } 
