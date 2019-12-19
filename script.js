@@ -102,15 +102,16 @@ var length = prompt("How many characters do you want your password to be?");
 	console.log("Password is " + password);
 	console.log("password length is " + password.length);
 	
-	alert("Password is: " + password);
+	
+	document.getElementById("thepassword").value = password;
 
-
-	var body = document.body
-    var pass = document.createElement('pass');
-	pass.textContent = password;
-
-	body.appendChild(pass);
-
+	function myFunction() {
+		var copyText = document.getElementById("thepassword");
+		copyText.select();
+		copyText.setSelectionRange(0, 99999)
+		document.execCommand("copy");
+		alert("Copied the text: " + copyText.value);
+	  }
 
 
 
