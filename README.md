@@ -10,3 +10,5 @@ After that it prompts the user to ask if they would like special characters, num
 If the user selects one or more character types and a length between 8 and 128 a random password with the selected character type(s) and selected length will be generated. The password will populate in the blue input field. 
 
 The user can then click the button below the password labeled 'Copy to Clipboard' to copy the password to their clipboard. If the user would like to generate another password, they may do so by clicking the 'Generate Password' button below the input field.
+
+Deployed application: https://johnfranke.github.io/Password-Generator/
